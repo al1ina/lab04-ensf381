@@ -1,6 +1,5 @@
 const users_api = "https://69a1e70c2e82ee536fa28b3c.mockapi.io/users_api";
 
-// DOM selectors
 const userGrid = document.getElementById("userGrid");
 
 const viewToggleBtn = document.getElementById("viewToggleBtn");
@@ -73,13 +72,12 @@ viewToggleBtn.addEventListener("click", () => {
 sortByGroupBtn.addEventListener("click", () => {
 
   users.sort((a, b) => {
-    return a.user_group.localeCompare(b.user_group);
+    return Number(a.user_group) - Number(b.user_group);
   });
 
   render(users);
 
 });
-
 
 sortByIdBtn.addEventListener("click", () => {
 
