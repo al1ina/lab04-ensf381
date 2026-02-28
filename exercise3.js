@@ -1,4 +1,4 @@
-const users_api = "https://69a1e70c2e82ee536fa28b3c.mockapi.io/users";
+const users_api = "https://69a1e70c2e82ee536fa28b3c.mockapi.io/users_api";
 
 // DOM selectors
 const userGrid = document.getElementById("userGrid");
